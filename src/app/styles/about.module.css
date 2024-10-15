@@ -1,43 +1,15 @@
-.aboutHeader{
-    background-color:#3b5671;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f9f9f9;
-    
-    .content{
-        margin-right: 40%;
-        font-size: 20px;
-        padding: 40px;
-        width: 60%;
-    }
 
-    @media (max-width: 480px) {
-        .content {
-            margin-right: 0;
-            padding: 20px;
-        }
-    }
-
-    @media (min-width: 481px) and (max-width: 768px) {
-        .content {
-            padding: 30px;
-            margin-right: 20%;
-        }
-    }
+.portfolioHeaderReverse{
+    flex-direction: column-reverse;
 }
 
-.photosSection {
-    height: 500px;
+.portfolioHeader {
     display: flex;
+    height: calc(100vh - 64px);
+    flex-direction: row;
+    height: 500px;
 
-    .photo {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100%;
-        flex: 1; 
-    }
+    
     .photo1{
         background-image: url(../assets/cat.jpg);
     }
@@ -47,9 +19,54 @@
     .photo3{
         background-image: url(../assets/profile.jpg);
     }
+    .photo1, .photo2, .photo3 {
+        background-repeat: no-repeat;
+        background-size: cover;  /* cover 确保图片完全覆盖容器 */
+        background-position: center;
+        margin-left: 30px;
+        flex: 1;
+        height: 500px;
+        width: auto;
+    }
+    
+    .content {
+        flex: 1;
+        padding: 50px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact, .resume, .client {
+        margin-top: 20px;
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        flex-direction: column;
+        height: unset;
+        .photo {
+            flex: unset;
+            height: 1000px;
+            margin: 0;
+        }
+    }
 
     @media (max-width: 480px) {
         flex-direction: column;
-        height: 1400px;
+        height: unset;
+        .photo {
+            flex: unset;
+            margin: 0;
+            height: 500px;
+        }
+        .content{
+            padding: 20px;
+        }
+
+
     }
+}
+
+.portfolioHeaderReverse{
+    flex-direction: row-reverse;
 }

@@ -4,6 +4,9 @@
     padding: 20px 40px;
     height: 64px;
 
+    background: #FEFEFE;
+    background: linear-gradient(135deg, #FEFEFE, #e5e5e5);
+
     @media (max-width: 480px) {
       padding: 20px 10px;
       .homePage {
@@ -18,5 +21,11 @@
 
 .navLinks{
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.homeIcon {
+    height: 24px;
+    width: 24px;
 }
