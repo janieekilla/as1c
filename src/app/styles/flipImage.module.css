@@ -5,7 +5,7 @@
 .flipImage {
   width: 600px; 
   height: 400px; 
-  transition: transform 0.6s;
+  transition: transform 1.7s;
   transform-style: preserve-3d;
   cursor: pointer; 
 }
