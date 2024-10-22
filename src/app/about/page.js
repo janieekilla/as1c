@@ -44,7 +44,7 @@ export default function About() {
                 of my professional pursuits, I am a sports enthusiast who loves
                 engaging in a variety of outdoor activities. 
               </p>
-           
+           <br><br>
           </div>
         </div>
       </section>
